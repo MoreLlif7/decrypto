@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.epsi.decrypto.entites.User;
+import com.epsi.decrypto.entites.Users;
 import com.epsi.decrypto.services.UserService;
 
 import lombok.RequiredArgsConstructor;
@@ -21,12 +21,12 @@ public class UserController {
     public final UserService userService;
     
     @PostMapping
-    public User createUser(@RequestBody User user) {
+    public Users createUser(@RequestBody Users user) {
         return userService.createUser(user);
     }
 
     @GetMapping
-    public List<User> getAllUsers() {
+    public List<Users> getAllUsers() {
         return userService.getAllUsers();
     }
 }

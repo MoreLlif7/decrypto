@@ -22,7 +22,7 @@ public class Partie {
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private Users user;
 
     @ManyToOne
     @JoinColumn(name = "personnage_id", nullable = false)

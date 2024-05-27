@@ -2,11 +2,11 @@ package com.epsi.decrypto.services;
 
 import java.util.List;
 
-import com.epsi.decrypto.entites.User;
+import com.epsi.decrypto.entites.Users;
 
 public interface UserService {
 
-    User createUser(User user);
+    Users createUser(Users user);
 
-    List<User> getAllUsers();
+    List<Users> getAllUsers();
 }

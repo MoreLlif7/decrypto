@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.epsi.decrypto.entites.User;
+import com.epsi.decrypto.entites.Users;
 import com.epsi.decrypto.repositories.UserRepository;
 import com.epsi.decrypto.services.UserService;
 
@@ -16,12 +16,12 @@ public class UserServiceImpl implements UserService {
     public final UserRepository userRepository;
 
     @Override
-    public User createUser(User user) {
+    public Users createUser(Users user) {
         return userRepository.save(user);
     }
 
     @Override
-    public List<User> getAllUsers() {
+    public List<Users> getAllUsers() {
         return userRepository.findAll();
     }
 }
