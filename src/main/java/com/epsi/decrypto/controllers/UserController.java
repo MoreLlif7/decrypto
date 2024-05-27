@@ -14,7 +14,7 @@ import com.epsi.decrypto.services.UserService;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/api/public/users")
 @RequiredArgsConstructor
 public class UserController {
 

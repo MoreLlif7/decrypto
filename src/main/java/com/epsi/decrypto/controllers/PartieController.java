@@ -1,6 +1,5 @@
 package com.epsi.decrypto.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.epsi.decrypto.entites.Partie;
@@ -11,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/parties")
+@RequestMapping("/api/public/parties")
 @RequiredArgsConstructor
 public class PartieController {
    
